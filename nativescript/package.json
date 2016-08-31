@@ -12,7 +12,7 @@
     }
   },
   "scripts": {
-    "clean": "rm -rf platforms node_modules lib hooks"
+    "clean": "rm -rf platforms node_modules lib"
   },
   "dependencies": {
     "@angular/core": "2.0.0-rc.5",

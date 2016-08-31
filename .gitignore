@@ -45,7 +45,6 @@ src/**/*.js
 src/**/*.js.map
 !src/sw.js
 !src/client/app/frameworks/test
-nativescript/hooks
 nativescript/node_modules
 nativescript/platforms
 nativescript/**/*.js
@@ -54,6 +53,10 @@ nativescript/*.d.ts
 !nativescript/references.d.ts
 nativescript/app/app
 nativescript/app/assets
+nativescript/hooks/**
+!nativescript/hooks/before-prepare/
+nativescript/hooks/before-prepare/*
+!nativescript/hooks/before-prepare/nativescript-env-config.js
 desktop
 gulpfile.js
 gulpfile.js.map

@@ -5,6 +5,8 @@ import { Store } from '@ngrx/store';
 import { BaseComponent, RouterExtensions } from '../../frameworks/core/index';
 import { NameListService } from '../../frameworks/sample/index';
 
+import { Config } from '../../frameworks/core/utils/env.config';
+
 @BaseComponent({
   moduleId: module.id,
   selector: 'sd-home',
@@ -12,9 +14,10 @@ import { NameListService } from '../../frameworks/sample/index';
   styleUrls: ['home.component.css']
 })
 export class HomeComponent {
+  public configEnv: string = '';
   public newName: string = '';
   constructor(private store: Store<any>, public nameListService: NameListService, public routerext: RouterExtensions) {
-
+    this.configEnv = Config.ENV; 
   }
 
   /*
